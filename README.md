@@ -6,9 +6,15 @@ inputName
 
 # Optional Parameters
 outputName
+
 wetDryMix
+
 lowpassCutoff
+
 lowpassTransition
+
 highpassCutoff
+
 highpassTransition
+
 normalizeFactor
