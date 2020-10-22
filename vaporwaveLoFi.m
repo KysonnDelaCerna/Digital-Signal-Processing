@@ -10,13 +10,14 @@ function vaporwaveLoFi(inputName, varargin)
     addParameter(p,'highpassCutoff',2000);
     addParameter(p,'highpassTransition',1000);
     addParameter(p,'normalizeFactor',0.9);
+    addParameter(p,'samplingRateFactor',0.9);
     parse(p,inputName,varargin{:})
     
     % read audio
     [y, Fs]=audioread(inputName);
     
     % speed change
-    Fs=Fs*0.9;
+    Fs=Fs*p.Results.samplingRateFactor;
     
     % reverb
     reverb=reverberator('PreDelay',0,'WetDryMix',p.Results.wetDryMix);
