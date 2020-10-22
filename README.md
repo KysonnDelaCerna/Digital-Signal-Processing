@@ -18,3 +18,5 @@ highpassCutoff
 highpassTransition
 
 normalizeFactor
+
+samplingRateFactor
