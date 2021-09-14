@@ -1,5 +1,4 @@
 # Vaporwave Lo-Fi Audio Filter
-my final project for digital signal processing
 
 # Required Parameters
 inputName
@@ -20,3 +19,14 @@ highpassTransition
 normalizeFactor
 
 samplingRateFactor
+
+# Companding Schemes
+μ-Law
+
+modified μ-Law (μ=511)
+
+Square root
+
+Cube root
+
+Arc tangent
